@@ -1,18 +1,12 @@
-/*
-    *****************
-    DONE BY:-   TUMMALA KETHAN
-    
-    *****************
-*/
 
 function Quick()
 {
-    //Setting Time complexities
+    
     document.getElementById("Time_Worst").innerText="O(N^2)";
     document.getElementById("Time_Average").innerText="Θ(N log N)";
     document.getElementById("Time_Best").innerText="Ω(N log N)";
 
-    //Setting Space complexity
+    
     document.getElementById("Space_Worst").innerText="O(log N)";
 
     c_delay=0;
@@ -25,12 +19,12 @@ function Quick()
 function quick_partition (start, end)
 {
     var i = start + 1;
-    var piv = div_sizes[start] ;//make the first element as pivot element.
-    div_update(divs[start],div_sizes[start],"yellow");//Color update
+    var piv = div_sizes[start] ;
+    div_update(divs[start],div_sizes[start],"yellow");
 
         for(var j =start + 1; j <= end ; j++ )
         {
-            //re-arrange the array by putting elements which are less than pivot on one side and which are greater that on other.
+            
             if (div_sizes[ j ] < piv)
             {
                 div_update(divs[j],div_sizes[j],"yellow");//Color update
@@ -79,10 +73,3 @@ function quick_sort (start, end )
         quick_sort (piv_pos +1, end) ;//sorts the right side of pivot.
     }
  }
-
-/*
-    *****************
-    DONE BY:-   TUMMALA KETHAN
-    
-    *****************
-*/

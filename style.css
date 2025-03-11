@@ -7,16 +7,16 @@
     font-weight: bold;
     text-transform: uppercase;
     box-sizing: border-box;
-    /* Ensure padding and borders are included in element's width/height */
+   
 }
 
-/* Navigation Styling */
+
 nav {
     background-color: #3b3a3a;
     color: white;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    /* Simplified column ratio */
+   
     column-gap: 10%;
     padding: 0 5%;
 }
@@ -43,7 +43,7 @@ nav .array-inputs #a_generate {
 
 nav .array-inputs #a_generate:hover {
     color: #ccc;
-    /* Slight hover effect */
+  
 }
 
 nav .header_right {
@@ -53,7 +53,6 @@ nav .header_right {
 
 nav .header_right .nav-heading {
     font-size: 3rem;
-    /* Changed from xxx-large for better control */
     padding: 3% 0;
 }
 
@@ -82,7 +81,7 @@ nav .header_right .algos button:hover {
 nav .header_right .algos .butt_locked {
     background-color: transparent;
     cursor: not-allowed;
-    /* Changed to indicate it's locked */
+    
 }
 
 nav .header_right .algos .butt_selected {
@@ -98,11 +97,11 @@ nav .header_right .algos .butt_unselected:hover {
     background-color: blue;
 }
 
-/* Section Styling */
+
 section {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    /* Simplified grid layout */
+  
 }
 
 section .Complexity_Containers {
@@ -138,7 +137,6 @@ section #array_container {
     height: 70vh;
 }
 
-/* Utility Classes */
 .hide {
     display: none;
 }
